@@ -37,3 +37,43 @@ python weather_alert.py
 - Missing API Key Error: Double-check that your .env file contains the correct OPEN_WEATHER_MAP_API_KEY. Make sure there are no typos or extra spaces.
 - Error fetching data: This could happen if the API key is incorrect or if the city name is misspelled. Verify both and try again.
 
+
+## Learning Outcomes
+
+Working with REST APIs
+
+API authentication using environment variables
+
+Secure credential handling
+
+Automation using time-based loops
+
+JSON data parsing
+
+Building CLI monitoring tools
+
+## Future Enhancements
+
+Email alerts
+
+SMS notifications
+
+Telegram/WhatsApp integration
+
+Desktop notifications
+
+Logging system
+
+Multi-city monitoring
+
+Deployment on cloud server
+
+## Author
+
+Atul Anand
+BCA (Hons)
+Amity University, Noida
+
+## Support
+
+If you find this project useful, please consider ⭐ starring the repository!
