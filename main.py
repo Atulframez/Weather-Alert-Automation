@@ -73,7 +73,9 @@ def main():
     and continuously checks for alerts.
     """
 
-    
+    city = input("Enter city name: ")
+    temp_threshold = float(input("Enter temperature threshold (°C): "))
+    wind_speed_threshold = float(input("Enter wind speed threshold (m/s): "))
 
     while True:
         weather_data = fetch_weather(city)
