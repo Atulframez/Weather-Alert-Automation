@@ -17,8 +17,7 @@ UNIT = 'metric'
 BASE_URL = 'https://api.openweathermap.org/data/2.5/find'
 
 
-def fetch_weather(city):
-    """Fetches weather data for a given city.
+
 
     Args:
         city (str): Name of the city.
