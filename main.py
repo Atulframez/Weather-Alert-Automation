@@ -84,3 +84,5 @@ def main():
         time.sleep(3600)  # check every hour
 
 
+if __name__ == "__main__":
+    main()
