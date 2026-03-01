@@ -1,20 +1,4 @@
-import requests
-import json
-import time
-import os
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Load API key from environment variable (security fix)
-API_KEY = os.getenv('OPEN_WEATHER_MAP_API_KEY')
-
-if not API_KEY:
-    raise ValueError("Missing environment variable 'OPEN_WEATHER_MAP_API_KEY'")
-
-UNIT = 'metric'
-BASE_URL = 'https://api.openweathermap.org/data/2.5/find'
 
 
 def fetch_weather(city):
