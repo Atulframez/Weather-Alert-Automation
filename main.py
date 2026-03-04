@@ -77,7 +77,12 @@ def main():
     temp_threshold = float(input("Enter temperature threshold (°C): "))
     wind_speed_threshold = float(input("Enter wind speed threshold (m/s): "))
 
-   
+    while True:
+        weather_data = fetch_weather(city)
+        check_alerts(weather_data, temp_threshold, wind_speed_threshold)
+        print("Waiting for the next check...")
+        time.sleep(3600)  # check every hour
+
 
 if __name__ == "__main__":
     main()
