@@ -48,9 +48,7 @@ def check_alerts(data, temp_threshold, wind_speed_threshold):
     Prints alerts if any, otherwise prints a message indicating normal weather conditions.
     """
 
-    if not data or 'list' not in data or not data['list']:
-        print("No data available to check alerts.")
-        return
+    
 
     weather_info = data['list'][0]
     temp = weather_info['main']['temp']
