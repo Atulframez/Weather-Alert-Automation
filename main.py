@@ -68,7 +68,10 @@ def check_alerts(data, temp_threshold, wind_speed_threshold):
         print("No alerts. Weather conditions are normal.")
 
 
-
+def main():
+    """Prompts user for city name, temperature and wind speed thresholds,
+    and continuously checks for alerts.
+    """
 
     city = input("Enter city name: ")
     temp_threshold = float(input("Enter temperature threshold (°C): "))
