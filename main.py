@@ -37,8 +37,7 @@ def fetch_weather(city):
         return None
 
 
-def check_alerts(data, temp_threshold, wind_speed_threshold):
-    """Checks for temperature and wind speed alerts in weather data.
+
 
     Args:
         data (dict): Weather data.
