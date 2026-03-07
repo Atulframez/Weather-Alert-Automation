@@ -30,7 +30,11 @@ def fetch_weather(city):
     url = f"{BASE_URL}?q={city}&appid={API_KEY}&units={UNIT}"
     response = requests.get(url)
 
-    
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print(f"Error fetching data: {response.status_code}")
+        return None
 
 
 def check_alerts(data, temp_threshold, wind_speed_threshold):
